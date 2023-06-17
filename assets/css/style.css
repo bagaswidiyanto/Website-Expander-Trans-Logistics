@@ -6,6 +6,7 @@
     --dark: #000000;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
+    --bg-linier-primary: linear-gradient(93.63deg, #021172 19.03%, #0790F5 93.02%);
 }
 
 .back-to-top {
@@ -21,6 +22,7 @@
 body {
     font-family: var(--font-montserrat);
     color: var(--secondary);
+    line-height: 1.2;
 }
 
 h1,
@@ -137,7 +139,7 @@ p {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    width: 30%;
+    width: 15%;
     height: 5px;
 }
 
@@ -362,16 +364,84 @@ p {
     padding-bottom: 3rem;
 }
 
+.advantage .header-title::before {
+    width: 50%;
+}
+
 
 .widget-hover {
-    padding: 2rem;
+    padding: 1.5rem;
     transition: .5s ease;
+    border-radius: 3px;
 }
 
 .widget-hover:hover {
-    background: ;
+    background: var(--bg-linier-primary);
+    box-shadow: -9px 17px 21px -4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
+.widget-hover img {
+    transition: all .3s ease;
+}
+
+.widget-hover:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.widget-hover .caption {
+    transition: all .3s ease;
+}
+
+.widget-hover:hover .caption {
+    color: var(--light);
+}
+
+
+.widget-hover:hover .more-btn a {
+    background: var(--primary);
+    color: var(--light);
+}
+
+
+/*** Our Service ***/
+.our-service .d-flex .img {
+    margin-left: -90px;
+    margin-right: 20px;
+}
+
+
+/*** News ***/
+.widget-news {
+    padding: 2.5rem 2rem;
+    transition: .5s;
+}
+
+.widget-news:hover {
+    box-shadow: -7px 4.10755px 17px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.widget-news:hover .more-btn a {
+    background: var(--primary);
+    color: var(--light);
+}
+
+.news .more-btn a:hover {
+    color: var(--primary);
+}
+
+
+/*** Tim Help ***/
+.tim-help {
+    padding: 3rem 0;
+    background-image: url(../img/tim-help.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
 
 
 /*** Footer ***/
