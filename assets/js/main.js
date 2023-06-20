@@ -63,22 +63,8 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav: true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
     
-    var cardSlider = new Swiper('.trading-slider', {
+    var cardSlider = new Swiper('.client-slider', {
         autoplay: false,
         // {
         // 	delay: 4000,
@@ -89,8 +75,8 @@
         //     nextEl: '.swiper-button-next',
         //     prevEl: '.swiper-button-prev'
         // },
-        slidesPerView: 2,
-        spaceBetween: 170,
+        slidesPerView: 4,
+        spaceBetween: 110,
         breakpoints: {
             // when window width is >= 480px
             480: {
@@ -103,76 +89,20 @@
                 spaceBetween: 70
             },
             767: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 70
             },
             // when window is <= 991px
             991: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 90,
             },
         }
     });
-    var cardSlider = new Swiper('.video-portofolio-slider', {
+
+    var cardSlider = new Swiper('.special-point-slider', {
         autoplay: false,
         // {
-        // 	delay: 4000,
-        // 	disableOnInteraction: false
-        // },
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        slidesPerView: 4,
-        spaceBetween: 30,
-        breakpoints: {
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 45
-            },
-            // when window width is >= 640px
-            600: {
-                slidesPerView: 1,
-                spaceBetween: 70
-            },
-            767: {
-                slidesPerView: 2,
-                spaceBetween: 70
-            },
-            // when window is <= 991px
-            991: {
-                slidesPerView: 2,
-                spaceBetween: 90,
-            },
-        }
-    });
-    
-    
-    var cardSlider = new Swiper('.promo-homes-slider', {
-        autoplay:
-         false,
-         // {
-        // 	delay: 4000,
-        // 	disableOnInteraction: false
-        // },
-        loop: false,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        slidesPerView: 1,
-        spaceBetween: 10,
-    });
-    
-
-    var cardSlider = new Swiper('.hero-profile-slider', {
-        autoplay:
-         false,
-         // {
         // 	delay: 4000,
         // 	disableOnInteraction: false
         // },
@@ -181,30 +111,31 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         },
-        slidesPerView: 1,
-        spaceBetween: 0,
-    });
-
-     // Testimonials carousel
-     $(".visi-slider").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
-        loop: true,
-        // center: true,
-        margin:30,
-        dots: false,
-        responsive: {
-            0:{
-                items:2
+        slidesPerView: 2,
+        spaceBetween: 30,
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
             },
-            768:{
-                items:2
+            // when window width is >= 640px
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20
             },
-            992:{
-                items:2
-            }
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
         }
     });
+  
     
 })(jQuery);
 

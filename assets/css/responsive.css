@@ -1,17 +1,35 @@
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 576px)  {
+    .other-1 .more-btn a {
+        font-size: 13px;
+        padding: .4rem .8rem;
+    }
 
+    .other-2 .more-btn a {
+        font-size: 13px;
+        padding: .4rem .8rem;
+    }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
+    .advantage {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
 
+    .other-1 img{
+        height: 20rem;
+    }
+    
 }
 
 @media only screen and (min-width: 768px)  {
-   
+    
 }
 
 @media only screen and (min-width: 992px) {
-    
+    .other-1 img {
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 1200px)  {
