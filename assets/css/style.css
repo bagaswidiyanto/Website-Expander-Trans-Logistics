@@ -463,12 +463,21 @@ p {
     border-radius: 10px;
 }
 
+.widget-news .more-btn a {
+    padding: 0;
+}
+
 .widget-news:hover .more-btn a {
     background: var(--primary);
     color: var(--light);
+    padding: 0.4rem 1rem;
 }
 
 .news .more-btn a:hover {
+    color: var(--light);
+}
+
+.news .more-btn.btn-last a:hover {
     color: var(--primary);
 }
 
