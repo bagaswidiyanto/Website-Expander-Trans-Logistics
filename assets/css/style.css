@@ -12,8 +12,8 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 30px;
-    bottom: 30px;
+    right: 15px;
+    bottom: 75px;
     border-radius: 8px;
     z-index: 99;
     background: #25D366;
@@ -67,7 +67,7 @@ p {
 .bg-second {
     background: var(--secondary);
     color: var(--light);
-}
+}   
 
 .text-first {
     color: var(--primary);
@@ -169,6 +169,9 @@ p {
     color: var(--primary);
 }
 
+
+
+
 /*** Top Navbar ***/
 .top-navbar::before {
     content: "";
@@ -257,6 +260,10 @@ p {
     outline: none;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
+}
+
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--primary);
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -580,6 +587,10 @@ p {
 
 /*** all-gallery ***/
 
+.all-gallery .nav-tabs .nav-item {
+    width: 100%;
+}
+
 .all-gallery .nav-tabs .nav-item .nav-link {
     color: var(--dark);
     border: 1px solid #D7D7D7;
@@ -642,6 +653,105 @@ p {
 
 
 
+/*=============== NEWS ===============*/
+
+/*** News ***/
+.box-news {
+    border-radius: 8px;
+    transition: .4s;
+    padding: 0;
+}
+
+.box-news:hover {
+    background: var(--light);
+    box-shadow: -7.193803787231445px 7.91318416595459px 24.45893096923828px -0.7193803191184998px rgba(0, 0, 0, 0.30);
+    padding: 1rem;
+}
+
+.box-news .picture {
+    overflow: hidden;
+    transition: .4s;
+    border-radius: 8px;
+}
+
+.box-news .picture img {
+    transition: .4s;
+}
+
+.box-news:hover .picture img {
+    transform: scale(1.2);
+}
+
+.headline .content a .card-title {
+    font-size: 1.1rem;
+}
+
+.content a .card-title {
+    font-size: .85rem;
+    font-weight: 700;
+    color: var(--dark);
+    transition: .4s;
+}
+
+.content a:hover .card-title {
+    color: var(--primary);
+}
+
+
+.content .card-date {
+    font-size: .6rem;
+    color: #C7C7C7;
+}
+
+.content .card-text {
+    font-size: .7rem;
+    color: #737373;
+}
+
+.content .card-text a {
+    color: var(--secondary);
+    font-weight: 600;
+    transition: .4s;
+}
+
+.content .card-text a:hover {
+    color: var(--primary);
+}
+
+
+/*=============== Contact ===============*/
+
+/*** Contact ***/
+
+form input {
+    border: none;
+    border-bottom: 1px solid;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: transparent;
+}
+
+form textarea {
+    background: transparent !important;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="email"]:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
 
 
 /*** Tim Help ***/
@@ -692,6 +802,10 @@ p {
     color: var(--light);
 }
 
+.footer .content .card-text {
+    color: var(--light);
+}
+
 .footer .content ul {
     list-style: none;
     padding-left: 0;
@@ -729,7 +843,7 @@ p {
     color: var(--light);
 }
 
-.footer iframe {
+iframe {
     width: 100%;
     height: 300px;
 }

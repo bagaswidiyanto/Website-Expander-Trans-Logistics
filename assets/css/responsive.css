@@ -19,21 +19,85 @@
     .other-1 img{
         height: 20rem;
     }
-    
+
+    .all-gallery .nav-tabs .nav-item {
+        width: auto;
+    }
+
+    .headline .content a .card-title {
+        font-size: 1.3rem;
+    }
+
+    .box-news {
+        padding: 0 1rem;
+    }
+
+    .content a .card-title {
+        font-size: 1.1rem;
+    }
+
+    .content .card-date {
+        font-size: .65rem;
+    }
+
+
+    .content .card-text {
+        font-size: .8rem;
+    }
+
 }
 
 @media only screen and (min-width: 768px)  {
-    
+    .content a .card-title {
+        font-size: 1.3rem;
+    }
+
+    .content .card-date {
+        font-size: .7rem;
+    }
+
+
+    .content .card-text {
+        font-size: .9rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .other-1 img {
         height: auto;
     }
+
+    .contact .form {
+        border-right: 1px solid #8D8B8B;
+    }
+
+    .content a .card-title {
+        font-size: 1.1rem;
+    }
+
+    .content .card-date {
+        font-size: .65rem;
+    }
+
+
+    .content .card-text {
+        font-size: .8rem;
+    }
 }
 
 @media only screen and (min-width: 1200px)  {
-   
+    .content a .card-title {
+        font-size: 1.3rem;
+    }
+
+    .content .card-date {
+        font-size: .7rem;
+    }
+
+
+    .content .card-text {
+        font-size: .9rem;
+    }
 }
 
 @media only screen and (min-width: 1400px)  {
