@@ -63,6 +63,24 @@
 }
 
 @media only screen and (min-width: 992px) {
+    .section-tracking {
+        background: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .tracking {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        top: -150px;
+    }
+
+    .form-control.ongkir {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
+
     .other-1 img {
         height: auto;
     }
@@ -86,6 +104,7 @@
 }
 
 @media only screen and (min-width: 1200px)  {
+
     .content a .card-title {
         font-size: 1.3rem;
     }

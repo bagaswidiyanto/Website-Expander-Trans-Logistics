@@ -1,12 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #F20244;
-    --secondary: #021172;
+    --primary: #B01414;
+    --secondary: #1F3378;
     --light: #FFFFFF;
     --dark: #1E1E1E;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
-    --bg-linier-primary: linear-gradient(93.63deg, #021172 19.03%, #0790F5 93.02%);
+    --bg-linier-primary: linear-gradient(93.63deg, #1F3378 19.03%, #0790F5 93.02%);
 }
 
 .back-to-top {
@@ -372,6 +372,49 @@ p {
     height: 100%;
 }
 
+
+/*** Tracking ***/
+.section-tracking {
+    background: #d9d9d9;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section-tracking .box-tracking {
+    background: var(--light);
+    box-shadow: -9px 10px 24px 0px rgba(0, 0, 0, 0.10);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.section-tracking .form-control {
+    background: #EBE5E5 !important;
+    border: 0;
+}
+
+.section-tracking label {
+    color: #9B9797;
+    margin-bottom: .5rem;
+}
+
+.form-control.ongkir {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.section-tracking .box-tracking .card-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-tracking .box-tracking .card-note {
+    font-size: 0.8rem;
+    color: #9B9797;
+    margin-bottom: .5rem;
+}
+
+
+
 /*** other-1 ***/
 .other-1 img{
    
@@ -452,6 +495,14 @@ p {
     height: auto;
 }
 
+.our-service .widget-hover .more-btn a:hover {
+    background: var(--light);
+    color: var(--secondary);
+}
+
+
+
+
 /*** News ***/
 .widget-news {
     padding: 2.5rem 2rem;
@@ -483,6 +534,28 @@ p {
 
 
 
+.detail-news .card-date {
+    color: #C7C7C7;
+    font-size: .9rem;
+}
+
+
+.detail-news .single-news .box-news {
+    background: var(--light);
+    box-shadow: -7px 4.10755px 17px 5px rgba(0, 0, 0, 0.2);
+    padding: 3rem 5rem;
+}
+
+.detail-news .single-news .box-news:hover {
+    padding: 3rem 5rem;
+}
+
+.detail-news .single-news .box-news:hover .picture img {
+    transform: none;
+}
+
+
+
 /*=============== PROFILE ===============*/
 
 /*** other-hero-header ***/
@@ -509,6 +582,47 @@ p {
     width: 100%;
     height: 100%;
 }
+
+
+/*** Vision Mision ***/
+.vision-mision {
+    margin-bottom: 0;
+    padding: 6rem 0;
+    background-image: url(../img/img-bg-vision.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.vision-mision::before {
+    content: "";
+    opacity: .6;
+    background: #F0EBEB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vision-mision .header-title::before {
+    width: 80%;
+}
+
+.vision-mision .header-title {
+    margin-bottom: 2rem;
+}
+
+.vision-mision .caption {
+    margin-top: 8rem;
+}
+
+
+
 
 
 /*** Special Point ***/
@@ -635,7 +749,7 @@ p {
 }
 
 .career .widget-hover:hover {
-    background: var(--primary);
+    background: var(--secondary);
 }
 
 .career .widget-hover .card-date {
@@ -657,7 +771,7 @@ p {
 
 
 .career .widget-hover:hover .more-btn a {
-    background: var(--secondary);
+    background: var(--primary);
 }
 
 
